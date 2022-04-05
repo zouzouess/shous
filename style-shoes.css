@@ -8,6 +8,8 @@
 body{
 
     background-color: rgb(240, 220, 223);
+    
+    
 }
 
 /* header */
@@ -15,16 +17,16 @@ body{
 header{
 
     position: relative;
-    height: 250px;
-    width: 100%;
+    height: 100px;
     background-color: white;
 
 }
 
 .logo{
 
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
+    margin: 0;
 }
 
 .headertitle{
@@ -32,12 +34,12 @@ header{
 font-size: 30px;
 color: red;
 font-family: 'Rubik Moonrocks', cursive;
-margin-left:50px;
+
 
 }
 
 /* barre de recherche en flex avec le logo */
-.input{
+.logotitle{
 
     display: flex;
 
@@ -70,11 +72,7 @@ margin-right: 30px;
 color:red;
    
 }
-span{
 
-  font-size: 50px;
-  color: black;
-}
 
 /* menu */
 
@@ -96,8 +94,8 @@ span{
     height: 30px;
     width: 500px;
     background-color: rgb(249, 241, 233);
-
-    margin-left: 20%;
+    margin-left: 30%;
+    margin-bottom: 40px;
     border-radius: 30px;
 
    
@@ -105,9 +103,9 @@ span{
 
 .imgcategorie{
 
-    margin-top: 100px;
-    height: 350px;
-    width: 350px;
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
 
 
 }
@@ -128,12 +126,10 @@ span{
 
 
 
-
-
 .categories{
 
 display: flex;
-justify-content: space-evenly;
+justify-content: space-around;
 align-items: center;
 
 
@@ -155,13 +151,8 @@ div .price p{
 
 }
 
-/* button promos */
 
-/* .prom{
-  height:150px ;
-width: 150px;
-  position: relative;
-} */
+
 
 .promo{
   background-color: red;
@@ -187,11 +178,11 @@ top: -1;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 30px;
     animation-name: glissement;
     animation-duration: 10s;
     animation-iteration-count: 4;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
 }
 
@@ -244,7 +235,7 @@ margin-right: 10px;
 
   .reseaux{
 
-margin-top: 100px;
+margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +243,7 @@ margin-top: 100px;
   }
   footer{
 
-    height: 300px;
+    height: 250px;
     width: 100%;
     background-color:white;
   }
@@ -263,11 +254,20 @@ margin-right: 100px;
     color: black;
     font-weight: 300px;
   }
-.contact{
 
-margin-top: 40px;
-  text-align: center;
+  h4.contactfooter{
+
+    margin-top: 40px;
+  }
+.contacts{
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  
 }
+
   
 
 /* IL ME RESTE A FAIRE LE CHOIX DE LA POLICE ET QUELQUE 
@@ -277,17 +277,19 @@ margin-top: 40px;
 
 
 
+
+
+
+
+
 /* _______________________page authentification_______________ */
 
-*{
-
-  padding: 0;
-  margin: 0;
-}
 
 header{
 
-
+  height: 250px;
+  width: 100%;
+  background-color: white;
 
 }
 
@@ -326,7 +328,7 @@ margin-bottom: 40px;
   flex-direction: column;
 }
 
-.btnconnecte{
+.btnconnecte,.btnenregistrement{
 
   height: 40px;
   width: 250px;
@@ -359,3 +361,122 @@ margin-bottom: 40px;
  }
 
  /* mettre les chekbox cote a cote*/
+
+
+ /* _________________page conditions generales____________________ */
+
+
+/* titre */
+
+header{
+
+
+}
+.cgs{
+
+  text-align: text;
+  margin-top: 40px;
+}
+
+ .paracg{
+
+  margin: 100px 100px
+ }
+/* paragraphe */
+
+  .paracg p {
+
+  margin-bottom: 40px;
+  text-align: justify;
+
+ }
+
+ /* ______________page mon panier__________________________ */
+
+ .paniershop{
+
+  font-size: 200px;
+  margin-bottom: 30px;
+ 
+ }
+ .pantitle{
+font-size: 40px;
+  margin-top: 40px;
+ }
+
+
+/* animation panier */
+ .continubtn,.validebtn{
+
+  height: 40px;
+  width: 400px;
+  color: white;
+  background-color: red;
+  margin-bottom: 20px;
+
+
+ }
+
+ .shop{
+
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+ }
+
+
+/* 
+/* ___________page de paiment________________
+   */
+
+header{
+
+
+}
+.paiementtitle{
+
+  margin-bottom: 40px;
+}
+
+.paiement{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.cards{
+
+  height: 30px;
+  width: 400px;
+  margin-left: 20px;
+}
+
+#ncard{
+height: 20px;
+width: 200px;
+margin-bottom:30px ;
+
+}
+
+#datem,#datey,#code{
+
+  height: 20px;
+  width: 80px;
+  margin-bottom: 30px;
+
+  
+}
+
+.inputpaiment{
+display: flex;
+justify-content: center;
+align-items:center ;
+flex-direction: column;
+
+}
