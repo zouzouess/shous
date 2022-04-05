@@ -437,8 +437,10 @@ header{
 
 }
 .paiementtitle{
-
   margin-bottom: 40px;
+  margin-top: 40px;
+
+  
 }
 
 .paiement{
@@ -446,6 +448,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
 
 }
@@ -455,6 +458,7 @@ header{
   height: 30px;
   width: 400px;
   margin-left: 20px;
+  margin-bottom:40px ;
 }
 
 #ncard{
@@ -474,9 +478,21 @@ margin-bottom:30px ;
 }
 
 .inputpaiment{
+
 display: flex;
 justify-content: center;
 align-items:center ;
 flex-direction: column;
+
+}
+
+.validerbtn, .abondonnerbtn{
+
+  height: 30px;
+  width:200px ;
+  background-color: black;
+  color: white;
+  margin-bottom: 30px;
+
 
 }
