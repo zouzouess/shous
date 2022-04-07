@@ -8,7 +8,8 @@
 body{
 
     background-color: rgb(240, 220, 223);
-    
+    overflow-x: hidden;
+  
     
 }
 
@@ -101,19 +102,29 @@ color:red;
    
 }
 
+::placeholder {
+ 
+  text-align: center;
+}
+
 .imgcategorie{
 
     margin-top: 20px;
     height: 300px;
     width: 300px;
+    position: relative;
 
 
 }
+
 
 .escarpins{
-
+height: 300px;
+width: 300px;
     margin-left: 40px;
+   
 }
+
 .btne,.btncc,.btns{
 
     height: 40px;
@@ -124,8 +135,7 @@ color:red;
 }
 
 
-
-
+ 
 .categories{
 
 display: flex;
@@ -152,14 +162,22 @@ div .price p{
 }
 
 
+.ajout{
 
+  height: px;
+  width:100px ;
+  background-color: black;
+  color: white;
+}
 
 .promo{
   background-color: red;
   color: white;
 height: 30px;
 width: 70px;
+border-radius: 50%;
 position: absolute;
+
 
 top: -1;
 }
@@ -182,8 +200,12 @@ top: -1;
     animation-name: glissement;
     animation-duration: 10s;
     animation-iteration-count: 4;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
+}
+ .red{
+
+  color: red;
 }
 
   @keyframes glissement {
@@ -197,6 +219,8 @@ top: -1;
       width: 100%;
     }
   }
+
+
 
   /* section service */
 
@@ -243,7 +267,7 @@ margin-top: 50px;
   }
   footer{
 
-    height: 250px;
+    height: 350px;
     width: 100%;
     background-color:white;
   }
@@ -267,6 +291,16 @@ align-items: center;
 flex-direction: column;
   
 }
+.footertitle{
+
+
+margin-top: 30px;
+    font-size: 30px;
+    color: red;
+    font-family: 'Rubik Moonrocks', cursive;
+    
+  
+    }
 
   
 
@@ -276,7 +310,15 @@ flex-direction: column;
 /* responsive */
 
 
+@media All and (max-width: 800px){
 
+   .categories{
+
+    display: grid;
+    grid-template-columns:1fr 1frs ;
+    
+  }
+}
 
 
 
@@ -411,7 +453,7 @@ font-size: 40px;
   height: 40px;
   width: 400px;
   color: white;
-  background-color: red;
+  background-color: blue;
   margin-bottom: 20px;
 
 
@@ -549,7 +591,7 @@ background-color: red;
 @media All and (max-width: 500px){
 
   .main {
-    display: block;
+    ;
   }
 }
 
