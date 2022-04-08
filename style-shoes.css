@@ -69,7 +69,7 @@ font-family: 'Rubik Moonrocks', cursive;
 }
 
 .compte,.panier{
-margin-right: 30px;
+margin-right: 10px;
 color:red;
    
 }
@@ -79,14 +79,15 @@ color:red;
 
 .nav{
 
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
     align-items: center;
+    justify-content: space-between;
     background-color: red;
     height: 30px;
     width: 80%;
     margin-left: 200px;
-    margin-top: 0 auto;
+    
 
 }
 
@@ -112,35 +113,56 @@ color:red;
     margin-top: 20px;
     height: 300px;
     width: 300px;
-    position: relative;
+   
 
 
 }
 
 
 .escarpins{
-height: 300px;
+height: 350px;
 width: 300px;
-    margin-left: 40px;
+ margin-left: 40px;
    
+  
 }
 
-.btne,.btncc,.btns{
 
-    height: 40px;
+.btnes,.btncc,.btns{
+
+    height: 50px;
     width: 250px;
     background-color: red;
     color: white;
     margin-left: 30px;
+    text-decoration: none;
+
+  
+}
+
+button a{
+text-decoration: none;
+color: white;
+
+}
+
+.nproduit{
+margin-left:20px ;
+
 }
 
 
  
 .categories{
 
-display: flex;
-justify-content: space-around;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
 align-items: center;
+margin-left:30px ;
+
+
+
 
 
 }
@@ -164,7 +186,7 @@ div .price p{
 
 .ajout{
 
-  height: px;
+  height: 40px;
   width:100px ;
   background-color: black;
   color: white;
@@ -177,8 +199,6 @@ height: 30px;
 width: 70px;
 border-radius: 50%;
 position: absolute;
-
-
 top: -1;
 }
 
@@ -196,11 +216,12 @@ top: -1;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 30px;
-    animation-name: glissement;
+    
+    animation-name: rightleft;
     animation-duration: 10s;
     animation-iteration-count: 4;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px; 
 
 }
  .red{
@@ -208,7 +229,7 @@ top: -1;
   color: red;
 }
 
-  @keyframes glissement {
+  @keyframes rightleft {
     from {
       margin-left: 100%;
       width: 300%;
@@ -278,12 +299,16 @@ margin-right: 100px;
     color: black;
     font-weight: 300px;
   }
+.footertitle{
 
-  h4.contactfooter{
+  margin-top: 40px;
+
+}
+  .contactfooter{
 
     margin-top: 40px;
   }
-.contacts{
+#contacts{
 
 display: flex;
 justify-content: center;
@@ -304,21 +329,22 @@ margin-top: 30px;
 
   
 
-/* IL ME RESTE A FAIRE LE CHOIX DE LA POLICE ET QUELQUE 
- */
+
 
 /* responsive */
 
 
-@media All and (max-width: 800px){
+@media All and (max-width: 900px){
 
-   .categories{
+  
+  
 
-    display: grid;
-    grid-template-columns:1fr 1frs ;
-    
-  }
+
+  
+
+
 }
+
 
 
 
@@ -448,12 +474,13 @@ font-size: 40px;
 
 
 /* animation panier */
+
  .continubtn,.validebtn{
 
   height: 40px;
   width: 400px;
   color: white;
-  background-color: blue;
+  background-color:red;
   margin-bottom: 20px;
 
 
@@ -471,7 +498,7 @@ flex-direction: column;
 
 
 /* 
-/* ___________page de paiment________________
+/* ___________page de paiement________________
    */
 
 header{
@@ -575,7 +602,7 @@ width: 500px;
 
 text-align: center;
 margin-top: 20px;
-background-color: red;
+background-color:blue;
 
 }
 
@@ -595,9 +622,110 @@ background-color: red;
   }
 }
 
+/* __________________page vente sandales________
+ */
+
+.ventesandale {
+
+  height: 400px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 
 
 
-    
+}
 
+   .ventetitle{
+
+    font-size: 30px;
+    color: red;
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-bottom: 30px;
+
+   } 
+   #sandalesearch{
+
+height: 30px;
+width: 300px
+;
+
+
+   }
+   
+/* _____________page chaussures confortables________ */
+
+
+
+.venteconfort {
+
+  height: 400px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+
+
+
+}
+
+   .titleconfort{
+
+    font-size: 30px;
+    color: red;
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-bottom: 30px;
+
+   } 
+   #confortsearch{
+
+height: 30px;
+width: 300px
+;
+
+
+   }
+   
+/* _____________page escarpins_________ */
+
+.venteescarpin {
+
+  height: 400px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+
+
+
+}
+
+   .titleescarpin{
+
+    font-size: 30px;
+    color: red;
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-bottom: 30px;
+
+   } 
+   #escsearch{
+
+height: 30px;
+width: 300px
+;
+
+
+   }
+   
