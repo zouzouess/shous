@@ -382,6 +382,10 @@ h1{
 
 }
 
+.mpoublié{
+
+  margin-bottom: 30px;
+}
 .pauth{
 
 margin-bottom: 40px;
@@ -712,6 +716,18 @@ width: 300px
 
 }
 
+.margin{
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
+
    .titleescarpin{
 
     font-size: 30px;
@@ -728,4 +744,55 @@ width: 300px
 
 
    }
-   
+   /* ___________passeword oublié____________ */
+
+   .forgot{
+
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+
+
+   }
+
+   .mpconcel,.mpvalide{
+
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin-right:10px ;
+
+
+   }
+
+   .flex{
+
+    display: flex;
+
+   }
+
+   /* _______page compte personnel_________ */
+
+   .donnéeperso,.mcommande,.hachat{
+
+    margin-bottom: 30px;
+    margin-left: 50px;
+    color: black;
+   }
+
+     a  {
+
+    text-decoration: none;
+   }
+   .compte{
+
+height: 400px;
+
+   }
+
+   .comptetitle{
+
+    margin-top: 30px;
+   }
