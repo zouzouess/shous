@@ -158,7 +158,6 @@ margin-left:20px ;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap: 20px;
-align-items: center;
 margin-left:30px ;
 
 
@@ -361,6 +360,12 @@ header{
 
 }
 
+.bonjour{
+
+  margin-top: 50px;
+
+}
+
 .senregister{
 
   text-align: center;
@@ -516,6 +521,13 @@ header{
   
 }
 
+.card{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .paiement{
 
   display: flex;
@@ -530,7 +542,7 @@ header{
 .cards{
 
   height: 30px;
-  width: 400px;
+  width: 70px;
   margin-left: 20px;
   margin-bottom:40px ;
 }
@@ -661,19 +673,25 @@ width: 300px
 
    }
    
-/* _____________page chaussures confortables________ */
+/* _____________page sneakers________ */
 
-
-
-.venteconfort {
-
-  height: 400px;
-  
+.inputsneakers{
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.SNEAKERS {
+
+  height: 400px;
+  
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 
 
@@ -682,6 +700,8 @@ width: 300px
 }
 
    .titleconfort{
+
+    margin-top: 50px ;
 
     font-size: 30px;
     color: red;
@@ -723,9 +743,6 @@ width: 300px
 
 
 }
-
-
-
 
 
    .titleescarpin{
@@ -770,6 +787,8 @@ width: 300px
    .flex{
 
     display: flex;
+    justify-content: center;
+    align-items: center;
 
    }
 
@@ -796,3 +815,122 @@ height: 400px;
 
     margin-top: 30px;
    }
+
+   /* ________page sandales_________ */
+
+   .inputs{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+   }
+
+   .ventesandale{
+
+height: 300px;
+width: 300px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 100px;
+margin-left:400px ;
+
+   }
+
+    .chaussconfor img {
+
+    height: 250px;
+    width: 250px;
+   }
+
+   .panbtn{
+
+    margin-left:30px ;
+   }
+
+   /* ______page promos_______ */
+
+   .PROMOTION{
+height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+
+    margin-top: 100px;
+   }
+    .promos{
+
+      font-size: 30px;
+    color: red;
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-top: 50px;
+    
+
+
+    }
+   
+
+   /* ________page escarpins__________ */
+
+   .esc{
+
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-left: 200px;
+   }
+
+   .inputesca{
+
+
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+   }
+   .titleescarpin{
+
+    margin-top: 50px;
+
+   }
+
+   /* ________données personnelles________ */
+
+   .donnéep{
+
+    margin-top: 50px;
+   }
+
+   .adresse{
+
+    margin-left:50px ;
+
+  font-size:20px ;
+
+
+
+   }
+
+   /* ________ page commandes_________ */
+
+   .commande{
+
+    margin-left: 100px;
+    margin-top: 50px;
+   }
+
+   .commandes ul {
+     margin-left: 100px;
+
+  }
+
+  li{
+
+   margin-bottom: 20px;
+  }
+

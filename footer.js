@@ -1,10 +1,9 @@
+export function addFooter () {
 
-export function addHeader() {
-    function header() {
-        const header = document.createElement('header')
-        header.innerHTML =`
-        
-        <div class="logotitle">
+    const footer = document.createElement('footer');
+    footer.innerHTML=`
+ 
+    <div class="logotitle">
     
 <img  class="logo" src="./asset/images/logo.jpeg" alt="logoheader">
 <h1 class="headertitle">SHOES ME</h1>
@@ -25,24 +24,10 @@ export function addHeader() {
     <a href="#contacts" class="contact textdeco" >NOUS CONTACTER</a>
 
     </nav>
-        
-        
-        
-        `
-        return header
-}
-
-const myHeader = header();
-document.querySelector('body').insertBefore(myHeader, document.querySelector('section'))
-}
 
 
+    `
+return footer
 
+ }
 
-
-
-
-
-
-
- 
